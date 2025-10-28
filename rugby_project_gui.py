@@ -1,0 +1,105 @@
+
+
+import kagglehub
+import pandas as pd
+import matplotlib.pyplot as plt
+import tkinter as tk
+from tkinter import ttk, messagebox
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+
+def wrap_by_words(text, words_per_line=4):
+    if pd.isnull(text):
+        return ''
+    words = str(text).split()
+    lines = [' '.join(words[i:i+words_per_line]) for i in range(0, len(words), words_per_line)]
+    return '\n'.join(lines)
+
+# Download latest version
+path = kagglehub.dataset_download("lylebegbie/international-rugby-union-results-from-18712022")
+#get the downlaoded data
+print("Path to dataset files:", path)
+new_path=path+"\\results.csv"
+#create dataframe
+rugby=pd.read_csv(new_path)
+teams = sorted(set(rugby['home_team']).union(set(rugby['away_team'])))
+
+# GUI-Funktion: Match-Stats für ausgewähltes Team
+# GUI-Fenster
+root = tk.Tk()
+root.title("Rugby Team Report")
+
+# Team-Auswahl
+team_var = tk.StringVar()
+team_dropdown = ttk.Combobox(root, textvariable=team_var, values=teams, state="readonly", width=30)
+team_dropdown.set("Team auswählen")
+team_dropdown.grid(row=0, column=0, padx=10, pady=10)
+
+# Ergebnis-Label
+result_label = tk.Label(root, text="", justify="left", font=("Arial", 10), anchor="w")
+result_label.grid(row=1, column=0, padx=10, pady=10, sticky="w")
+
+# Canvas für Diagramme
+canvas_frame = tk.Frame(root)
+canvas_frame.grid(row=2, column=0, padx=10, pady=10)
+
+def update_report(*args):
+    team = team_var.get()
+    rugby_team = rugby[(rugby['home_team'] == team) | (rugby['away_team'] == team)]
+
+    # Statistiken berechnen
+    wins = losses = draws = points = 0
+    opponents = []
+    for _, i in rugby_team.iterrows():
+        team_score = i['home_score'] if i['home_team'] == team else i['away_score']
+        opp_score = i['away_score'] if i['home_team'] == team else i['home_score']
+        opponent = i['away_team'] if i['home_team'] == team else i['home_team']
+        opponents.append(opponent)
+        points += team_score
+        if team_score > opp_score:
+            wins += 1
+        elif team_score < opp_score:
+            losses += 1
+        else:
+            draws += 1
+
+    matches = len(rugby_team)
+    avg_points = round(points / matches, 2) if matches > 0 else 0
+    result_text = (
+        f"Team: {team}\n"
+        f"Spiele: {matches}\n"
+        f"Siege: {wins}\n"
+        f"Niederlagen: {losses}\n"
+        f"Unentschieden: {draws}\n"
+        f"Punkte pro Spiel: {avg_points}"
+    )
+    result_label.config(text=result_text)
+
+    # Letzte 5 Spiele als Tabelle
+    df_last5 = rugby_team.tail(5)
+
+    fig, axs = plt.subplots(1, 2, figsize=(15, 10))
+    axs[0].axis('off')
+    table = axs[0].table(cellText=df_last5.values, colLabels=df_last5.columns, loc='center')
+    table.auto_set_font_size(False)
+    table.set_fontsize(8)
+    table.scale(1.2, 1.2)
+    axs[0].set_title("Letzte 5 Spiele")
+
+    # Tortendiagramm der Gegner
+    opp_counts = pd.Series(opponents).value_counts()
+    axs[1].pie(opp_counts.values, labels=opp_counts.index, autopct='%1.0f%%')
+    axs[1].set_title("Gegnerverteilung")
+
+    # Diagramm in GUI einbetten
+    for widget in canvas_frame.winfo_children():
+        widget.destroy()
+    canvas = FigureCanvasTkAgg(fig, master=canvas_frame)
+    canvas.draw()
+    canvas.get_tk_widget().pack()
+
+# Eventbindung
+team_dropdown.bind("<<ComboboxSelected>>", update_report)
+
+# GUI starten
+root.mainloop()
