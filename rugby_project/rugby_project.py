@@ -5,6 +5,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+def wrap_by_words(text, words_per_line=4):
+    if pd.isnull(text):
+        return ''
+    words = str(text).split()
+    lines = [' '.join(words[i:i+words_per_line]) for i in range(0, len(words), words_per_line)]
+    return '\n'.join(lines)
+
 # Download latest version
 path = kagglehub.dataset_download("lylebegbie/international-rugby-union-results-from-18712022")
 #get the downlaoded data
@@ -12,7 +19,8 @@ print("Path to dataset files:", path)
 new_path=path+"\\results.csv"
 #create dataframe
 rugby=pd.read_csv(new_path)
-
+rugby['competition'] = rugby['competition'].apply(lambda x: wrap_by_words(x, words_per_line=2))
+rugby['stadium'] = rugby['stadium'].apply(lambda x: wrap_by_words(x, words_per_line=2))
 # spezifie the team
 team='New Zealand'
 rugby_team = rugby[(rugby['home_team'] == team) | (rugby['away_team'] == team)]
@@ -55,7 +63,7 @@ def last_5_matches(team):
     plt.title(f"Last 5 Matches of {team}")
     table.auto_set_font_size(False)
     table.set_fontsize(10)
-    table.scale(1.2, 1.2)
+    table.scale(1.1, 1.5)
     plt.show()
 
     return 1
