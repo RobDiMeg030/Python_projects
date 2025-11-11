@@ -85,17 +85,10 @@ axs[0].set_title("Confusion Matrix - Decison Tree")
 
 # Sentiment-Verteilung
 
-
-
-
 cm_sentiment = confusion_matrix(y_test, sentiment_preds, labels=all_labels)
 disp_sentiment = ConfusionMatrixDisplay(confusion_matrix=cm_sentiment, display_labels=all_labels)
 disp_sentiment.plot(ax=axs[1], cmap="Oranges", colorbar=False)
 axs[1].set_title("Confusion Matrix – TextBlob Sentiment")
-
-
-
-
 
 plt.tight_layout()
 plt.show()
