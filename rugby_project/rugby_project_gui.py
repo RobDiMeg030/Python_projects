@@ -44,7 +44,7 @@ teams = sorted(set(rugby['home_team']).union(set(rugby['away_team'])))
 # GUI-Fenster
 root = tk.Tk()
 root.title("Rugby Team Report")
-
+root.geometry("1200x800")
 # Team-Auswahl
 team_var = tk.StringVar()
 team_dropdown = ttk.Combobox(root, textvariable=team_var, values=teams, state="readonly", width=30)
@@ -64,13 +64,20 @@ end_date = DateEntry(root, width=12, background='darkblue', foreground='white', 
 end_date.grid(row=0, column=4, padx=5, pady=10)
 
 
+# Beenden-Button
+exit_button = tk.Button(root, text="Beenden", command=root.destroy)
+exit_button.grid(row=0, column=5, padx=10, pady=10, sticky="w")
+
+
 # Ergebnis-Label
 result_label = tk.Label(root, text="", justify="left", font=("Arial", 10), anchor="w")
 result_label.grid(row=1, column=0, padx=10, pady=10, sticky="w")
 
 # Canvas für Diagramme
 canvas_frame = tk.Frame(root)
-canvas_frame.grid(row=2, column=0, padx=10, pady=10)
+canvas_frame.grid(row=2, column=0, columnspan=5, padx=10, pady=10, sticky="nsew")
+root.grid_rowconfigure(2, weight=1)
+root.grid_columnconfigure(0, weight=1)
 
 def update_report(*args):
     team = team_var.get()
@@ -121,12 +128,12 @@ def update_report(*args):
     # Letzte 5 Spiele als Tabelle
     df_last5 = rugby_team.tail(5)
 
-    fig, axs = plt.subplots(2, 1, figsize=(15, 10))
+    fig, axs = plt.subplots(2, 1, figsize=(8, 6))
     axs[0].axis('off')
     table = axs[0].table(cellText=df_last5.values, colLabels=df_last5.columns, loc='center')
     table.auto_set_font_size(False)
     table.set_fontsize(6)
-    table.scale(1.5, 1.2)
+    table.scale(1, 1.2)
     axs[0].set_title("Letzte 5 Spiele")
 
     # Tortendiagramm der Gegner
@@ -138,11 +145,16 @@ def update_report(*args):
     for widget in canvas_frame.winfo_children():
         widget.destroy()
     canvas = FigureCanvasTkAgg(fig, master=canvas_frame)
+
     canvas.draw()
     canvas.get_tk_widget().pack()
+    canvas.get_tk_widget().pack(expand=True, fill='both')
 
 # Eventbindung
 team_dropdown.bind("<<ComboboxSelected>>", update_report)
+
+
+
 
 # GUI starten
 root.mainloop()
