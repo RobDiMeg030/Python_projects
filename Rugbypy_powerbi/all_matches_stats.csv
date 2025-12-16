@@ -1,0 +1,89 @@
+match_id,date,season,competition_id,competition,venue_id,venue,city_played,home_team,away_team,home_team_id,away_team_id,completed,is_tournament,played_on_grass,attendance,home_team_form,away_team_form
+595735,20230101,2023,267979,Premiership Rugby,26070,cinch Stadium at Franklin's Gardens,Northampton,Northampton Saints,Harlequins,25907,25901,True,True,True,,WLWWL,WTLWL
+599464,20230101,2023,270557,United Rugby Championship,16776,Cardiff Arms Park,Cardiff,Cardiff Blues,Ospreys,25965,25968,True,True,True,,TWWLW,TWLWL
+599465,20230101,2023,270557,United Rugby Championship,26073,Parc y Scarlets,Llanelli,Scarlets,Dragons,25966,25967,True,True,True,,WLWLL,LLWLL
+599466,20230101,2023,270557,United Rugby Championship,16157,Kingspan Stadium,Belfast,Ulster,Munster,25926,25925,True,True,True,,WLLLL,LWLWW
+599467,20230101,2023,270557,United Rugby Championship,26074,RDS Arena,Dublin,Leinster,Connacht,25924,25923,True,True,True,,WWWWW,LLWWL
+597648,20230101,2023,270559,Top 14,16262,Stade Marcel Michelin,Clermont-Ferrand,Clermont Auvergne,Stade Toulousain,25917,25922,True,True,True,,LLLWW,LWTWW
+595740,20230106,2023,267979,Premiership Rugby,16131,Kingsholm,Gloucester,Gloucester Rugby,Saracens,25900,25909,True,True,True,,WLWLW,WLWWW
+599468,20230106,2023,270557,United Rugby Championship,16107,Rodney Parade,Newport,Dragons,Bulls,25967,25953,True,True,True,,LLWLL,LLLWW
+599469,20230106,2023,270557,United Rugby Championship,26072,Virgin Media Park,Cork,Munster,Lions,25925,25958,True,True,True,,LWLWW,LWLLL
+595742,20230107,2023,267979,Premiership Rugby,26056,Kingston Park,Newcastle,Newcastle Falcons,Leicester Tigers,25906,25903,True,True,True,,LLLLL,WTLWL
+595739,20230107,2023,267979,Premiership Rugby,118601,Sandy Park,Exeter,Exeter Chiefs,Northampton Saints,116227,25907,True,True,True,,LWLLL,WLWWL
+599470,20230107,2023,270557,United Rugby Championship,16223,Stadio Comunale di Monigo,Treviso,Benetton Treviso,Ulster,25927,25926,True,True,True,,WWWLL,WLLLL
+599471,20230107,2023,270557,United Rugby Championship,308496,Hive Stadium,Edinburgh,Edinburgh,Zebre,25951,167124,True,True,True,,WLWLW,LLLLW
+599472,20230107,2023,270557,United Rugby Championship,26071,Dexcom Stadium,Galway,Connacht,Sharks,25923,25961,True,True,True,,LLWWL,LWLWW
+599473,20230107,2023,270557,United Rugby Championship,16776,Cardiff Arms Park,Cardiff,Cardiff Blues,Scarlets,25965,25966,True,True,True,,TWWLW,WLWLL
+599474,20230107,2023,270557,United Rugby Championship,26057,Swansea.com Stadium,Swansea,Ospreys,Leinster,25968,25924,True,True,True,,TWLWL,WWWWW
+597661,20230107,2023,270559,Top 14,16681,Stade Chaban-Delmas,Bordeaux,Bordeaux Begles,Bayonne,143737,25912,True,True,True,,WWWWW,LWWLW
+597655,20230107,2023,270559,Top 14,16262,Stade Marcel Michelin,Clermont-Ferrand,Clermont Auvergne,Perpignan,25917,25920,True,True,True,,LLLWW,LWLLT
+597656,20230107,2023,270559,Top 14,80045,Stade Amedee-Domenech,Brive,Brive,Toulon,25915,25986,True,True,True,,LLWWL,WLWWW
+597658,20230107,2023,270559,Top 14,271945,Stade du Hameau,Pau,Pau,Lyon,270567,143736,True,True,True,,LWLLW,WTTWW
+597659,20230107,2023,270559,Top 14,26063,Stade Jean Bouin,Paris,Stade Francais Paris,Castres Olympique,25921,25916,True,True,True,,LLWLL,WLLWL
+597660,20230107,2023,270559,Top 14,16394,Stade Marcel-Deflandre,La Rochelle,La Rochelle,Stade Toulousain,119318,25922,True,True,True,,WLWWW,LWTWW
+595741,20230108,2023,267979,Premiership Rugby,26067,Twickenham Stoop,London,Harlequins,Sale Sharks,25901,25908,True,True,True,,WTLWL,LWWWL
+595743,20230108,2023,267979,Premiership Rugby,308456,Gtech Community Stadium,London,London Irish,Bristol Rugby,25904,25899,True,True,True,,WLWLW,LLWLL
+599475,20230108,2023,270557,United Rugby Championship,167125,Scotstoun Stadium,Glasgow,Glasgow Warriors,Stormers,25952,25962,True,True,True,,LWLWW,WWLLL
+597657,20230108,2023,270559,Top 14,26065,GGL Stadium,Montpellier,Montpellier Herault,Racing 92,25918,99855,True,True,True,,WWWWW,LTLLW
+597416,20230113,2023,271937,European Rugby Champions Cup,16262,Stade Marcel Michelin,Clermont-Ferrand,Clermont Auvergne,Leicester Tigers,25917,25903,True,True,True,,LLLWW,WTLWL
+598622,20230113,2023,272073,European Rugby Challenge Cup,271945,Stade du Hameau,Pau,Pau,Dragons,270567,25967,True,True,True,,LWLLW,LLWLL
+598623,20230113,2023,272073,European Rugby Challenge Cup,26073,Parc y Scarlets,Llanelli,Scarlets,Cheetahs,25966,25955,True,True,True,,WLWLL,LTLLL
+597417,20230114,2023,271937,European Rugby Champions Cup,166602,Salford City Stadium,Salford,Sale Sharks,Stade Toulousain,25908,25922,True,True,True,,LWWWL,LWTWW
+597418,20230114,2023,271937,European Rugby Champions Cup,16131,Kingsholm,Gloucester,Gloucester Rugby,Leinster,25900,25924,True,True,True,,WLWLW,WWWWW
+597419,20230114,2023,271937,European Rugby Champions Cup,16294,Hollywoodbets Kings Park,Durban,Sharks,Bordeaux Begles,25961,143737,True,True,True,,LWLWW,WWWWW
+597420,20230114,2023,271937,European Rugby Champions Cup,16127,Thomond Park,Limerick,Munster,Northampton Saints,25925,25907,True,True,True,,LWLWW,WLWWL
+597421,20230114,2023,271937,European Rugby Champions Cup,16234,Loftus Versfeld,Pretoria,Bulls,Exeter Chiefs,25953,116227,True,True,True,,LLLWW,LWLLL
+597422,20230114,2023,271937,European Rugby Champions Cup,16394,Stade Marcel-Deflandre,La Rochelle,La Rochelle,Ulster,119318,25926,True,True,True,,WLWWW,WLLLL
+597423,20230114,2023,271937,European Rugby Champions Cup,26057,Swansea.com Stadium,Swansea,Ospreys,Montpellier Herault,25968,25918,True,True,True,,TWLWL,WWWWW
+597424,20230114,2023,271937,European Rugby Champions Cup,167186,StoneX Stadium,London,Saracens,Lyon,25909,143736,True,True,True,,WLWWW,WTTWW
+598624,20230114,2023,272073,European Rugby Challenge Cup,26063,Stade Jean Bouin,Paris,Stade Francais Paris,Lions,25921,25958,True,True,True,,LLWLL,LWLLL
+598625,20230114,2023,272073,European Rugby Challenge Cup,16223,Stadio Comunale di Monigo,Treviso,Benetton Treviso,Bayonne,25927,25912,True,True,True,,WWWLL,LWWLW
+598626,20230114,2023,272073,European Rugby Challenge Cup,26071,Dexcom Stadium,Galway,Connacht,Brive,25923,25915,True,True,True,,LLWWL,LLWWL
+598627,20230114,2023,272073,European Rugby Challenge Cup,103678,Stadio Sergio Lanfranchi,Parma,Zebre,Bristol Rugby,167124,25899,True,True,True,,LLLLW,LLWLL
+598628,20230114,2023,272073,European Rugby Challenge Cup,16610,Stade Aime Giral,Perpignan,Perpignan,Glasgow Warriors,25920,25952,True,True,True,,LWLLT,LWLWW
+597425,20230115,2023,271937,European Rugby Champions Cup,80052,Stade Pierre Fabre,Castres,Castres Olympique,Edinburgh,25916,25951,True,True,True,,WLLWL,WLWLW
+597426,20230115,2023,271937,European Rugby Champions Cup,308456,Gtech Community Stadium,London,London Irish,Stormers,25904,25962,True,True,True,,WLWLW,WWLLL
+597427,20230115,2023,271937,European Rugby Champions Cup,289546,Paris La Defense Arena,Nanterre,Racing 92,Harlequins,99855,25901,True,True,True,,LTLLW,WTLWL
+598629,20230115,2023,272073,European Rugby Challenge Cup,16776,Cardiff Arms Park,Cardiff,Cardiff Blues,Newcastle Falcons,25965,25906,True,True,True,,TWWLW,LLLLL
+598630,20230115,2023,272073,European Rugby Challenge Cup,16131,Kingsholm,Gloucester,Bath Rugby,Toulon,25898,25986,True,True,True,,WWLLW,WLWWW
+597428,20230120,2023,271937,European Rugby Champions Cup,16220,Matmut Stadium de Gerland,Lyon,Lyon,Bulls,143736,25953,True,True,True,,WTTWW,LLLWW
+597429,20230120,2023,271937,European Rugby Champions Cup,16133,Mattioli Woods Welford Road Stadium,Leicester,Leicester Tigers,Ospreys,25903,25968,True,True,True,,WTLWL,TWLWL
+598631,20230120,2023,272073,European Rugby Challenge Cup,80047,Stade Mayol,Toulon,Toulon,Zebre,25986,167124,True,True,True,,WLWWW,LLLLW
+598632,20230120,2023,272073,European Rugby Challenge Cup,167125,Scotstoun Stadium,Glasgow,Glasgow Warriors,Bath Rugby,25952,25898,True,True,True,,LWLWW,WWLLW
+598633,20230120,2023,272073,European Rugby Challenge Cup,16142,Ashton Gate,Bristol,Bristol Rugby,Perpignan,25899,25920,True,True,True,,LLWLL,LWLLT
+597430,20230121,2023,271937,European Rugby Champions Cup,26070,cinch Stadium at Franklin's Gardens,Northampton,Northampton Saints,La Rochelle,25907,119318,True,True,True,,WLWWL,WLWWW
+597431,20230121,2023,271937,European Rugby Champions Cup,26067,Twickenham Stoop,London,Harlequins,Sharks,25901,25961,True,True,True,,WTLWL,LWLWW
+597432,20230121,2023,271937,European Rugby Champions Cup,16681,Stade Chaban-Delmas,Bordeaux,Bordeaux Begles,Gloucester Rugby,143737,25900,True,True,True,,WWWWW,WLWLW
+597433,20230121,2023,271937,European Rugby Champions Cup,16102,Aviva Stadium,Dublin,Leinster,Racing 92,25924,99855,True,True,True,,WWWWW,LTLLW
+597434,20230121,2023,271937,European Rugby Champions Cup,289723,DHL Stadium,Cape Town,Stormers,Clermont Auvergne,25962,25917,True,True,True,,WWLLL,LLLWW
+597435,20230121,2023,271937,European Rugby Champions Cup,118601,Sandy Park,Exeter,Exeter Chiefs,Castres Olympique,116227,25916,True,True,True,,LWLLL,WLLWL
+597436,20230121,2023,271937,European Rugby Champions Cup,16157,Kingspan Stadium,Belfast,Ulster,Sale Sharks,25926,25908,True,True,True,,WLLLL,LWWWL
+598634,20230121,2023,272073,European Rugby Challenge Cup,88018,Stade Jean Dauger,Bayonne,Bayonne,Scarlets,25912,25966,True,True,True,,LWWLW,WLWLL
+598635,20230121,2023,272073,European Rugby Challenge Cup,16223,Stadio Comunale di Monigo,Treviso,Benetton Treviso,Stade Francais Paris,25927,25921,True,True,True,,WWWLL,LLWLL
+598636,20230121,2023,272073,European Rugby Challenge Cup,80045,Stade Amedee-Domenech,Brive,Brive,Cardiff Blues,25915,25965,True,True,True,,LLWWL,TWWLW
+598637,20230121,2023,272073,European Rugby Challenge Cup,26056,Kingston Park,Newcastle,Newcastle Falcons,Connacht,25906,25923,True,True,True,,LLLLL,LLWWL
+597437,20230122,2023,271937,European Rugby Champions Cup,26065,GGL Stadium,Montpellier,Montpellier Herault,London Irish,25918,25904,True,True,True,,WWWWW,WLWLW
+597438,20230122,2023,271937,European Rugby Champions Cup,16510,Stade Ernest-Wallon,Toulouse,Stade Toulousain,Munster,25922,25925,True,True,True,,LWTWW,LWLWW
+597439,20230122,2023,271937,European Rugby Champions Cup,308496,Hive Stadium,Edinburgh,Edinburgh,Saracens,25951,25909,True,True,True,,WLWLW,WLWWW
+598638,20230122,2023,272073,European Rugby Challenge Cup,308561,Centre for Sporting Excellence,,Dragons,Lions,25967,25958,True,True,True,,LLWLL,LWLLL
+598639,20230122,2023,272073,European Rugby Challenge Cup,103678,Stadio Sergio Lanfranchi,Parma,Cheetahs,Pau,25955,270567,True,True,True,,LTLLL,LWLLW
+595747,20230127,2023,267979,Premiership Rugby,166602,Salford City Stadium,Salford,Harlequins,Sale Sharks,25901,25908,True,True,True,,WTLWL,LWWWL
+599476,20230127,2023,270557,United Rugby Championship,16157,Kingspan Stadium,Belfast,Ulster,Stormers,25926,25962,True,True,True,,WLLLL,WWLLL
+599477,20230127,2023,270557,United Rugby Championship,26073,Parc y Scarlets,Llanelli,Scarlets,Bulls,25966,25953,True,True,True,,WLWLL,LLLWW
+595748,20230128,2023,267979,Premiership Rugby,16133,Mattioli Woods Welford Road Stadium,Leicester,Leicester Tigers,Northampton Saints,25903,25907,True,True,True,,WTLWL,WLWWL
+595745,20230128,2023,267979,Premiership Rugby,167186,StoneX Stadium,London,Bath Rugby,Saracens,25898,25909,True,True,True,,WWLLW,WLWWW
+595746,20230128,2023,267979,Premiership Rugby,118601,Sandy Park,Exeter,Exeter Chiefs,Gloucester Rugby,116227,25900,True,True,True,,LWLLL,WLWLW
+597664,20230128,2023,270559,Top 14,16220,Matmut Stadium de Gerland,Lyon,Lyon,Clermont Auvergne,143736,25917,True,True,True,,WTTWW,LLLWW
+597662,20230128,2023,270559,Top 14,88018,Stade Jean Dauger,Bayonne,Bayonne,Brive,25912,25915,True,True,True,,LWWLW,LLWWL
+597663,20230128,2023,270559,Top 14,80052,Stade Pierre Fabre,Castres,Castres Olympique,Bordeaux Begles,25916,143737,True,True,True,,WLLWL,WWWWW
+597666,20230128,2023,270559,Top 14,80047,Stade Mayol,Toulon,Toulon,Pau,25986,270567,True,True,True,,WLWWW,LWLLW
+597668,20230128,2023,270559,Top 14,16610,Stade Aime Giral,Perpignan,Perpignan,Stade Francais Paris,25920,25921,True,True,True,,LWLLT,LLWLL
+597665,20230128,2023,270559,Top 14,289546,Paris La Defense Arena,Nanterre,Racing 92,La Rochelle,99855,119318,True,True,True,,LTLLW,WLWWW
+599478,20230128,2023,270557,United Rugby Championship,16223,Stadio Comunale di Monigo,Treviso,Benetton Treviso,Munster,25927,25925,True,True,True,,WWWLL,LWLWW
+599479,20230128,2023,270557,United Rugby Championship,16107,Rodney Parade,Newport,Dragons,Glasgow Warriors,25967,25952,True,True,True,,LLWLL,LWLWW
+599480,20230128,2023,270557,United Rugby Championship,26074,RDS Arena,Dublin,Leinster,Cardiff Blues,25924,25965,True,True,True,,WWWWW,TWWLW
+599481,20230128,2023,270557,United Rugby Championship,308496,Hive Stadium,Edinburgh,Edinburgh,Sharks,25951,25961,True,True,True,,WLWLW,LWLWW
+599482,20230128,2023,270557,United Rugby Championship,26071,Dexcom Stadium,Galway,Connacht,Lions,25923,25958,True,True,True,,LLWWL,LWLLL
+595749,20230129,2023,267979,Premiership Rugby,308456,Gtech Community Stadium,London,Wasps,London Irish,25905,25904,True,True,True,,LLLWW,WLWLW
+599483,20230129,2023,270557,United Rugby Championship,103678,Stadio Sergio Lanfranchi,Parma,Zebre,Ospreys,167124,25968,True,True,True,,LLLLW,TWLWL
+597667,20230129,2023,270559,Top 14,16510,Stade Ernest-Wallon,Toulouse,Stade Toulousain,Montpellier Herault,25922,25918,True,True,True,,LWTWW,WWWWW
