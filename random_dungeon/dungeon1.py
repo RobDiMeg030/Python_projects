@@ -1,4 +1,5 @@
 import random
+from action_class import *
 
 from sqlalchemy.sql.operators import truediv
 
@@ -12,12 +13,13 @@ class Room:
 
     def describe(self):
         description = {
-            "enemy": "Ein feindlicher Gegner erscheint!",
-            "treasure" :" Im Raum ist ein Schatztruhe.",
-            "empty":"Der Raum ist leer.",
-            "junction":"Es gibt eine Abzweigung. ",
-            "merchant":"Du erreichst den Händler.",
-            "boss":"Ein mächtiger Boss steht vor dir ! "
+             "enemy": "A hostile enemy appears!",
+            "treasure": "There is a treasure chest in the room.",
+            "empty": "The room is empty.",
+            "junction": "There is a junction ahead.",
+            "merchant": "You arrive at the merchant.",
+            "boss": "A powerful boss stands before you!"
+
 
 
         }
@@ -59,68 +61,6 @@ class Npc:
 
 
 # action class
-
-class Action:
-    def __init__(self,name,function):
-        self.name=name
-        self.function=function
-
-    def use_item(self,player):
-        print("soon...")
-    def block(self,player):
-        print("You brace yourself and block")
-
-        player.defense += 2
-        print("Your defense temporarily increased!")
-
-    def fight(player,npc):
-        print("Fight Started")
-        print(f"Your opponent {npc.name} - HP: {npc.hp} - Attack:{npc.attack} - Defense:{npc.defense}")
-        print(f"Your Stats - HP:{player.hp} - Attack:{player.attack} - Defense:{player.defense}")
-
-        while npc.hp > 0 and player.hp >0:
-    # giving options
-            choice=input("""What you are gonna do?
-                    F - Fight
-                    B - Block
-                    I - Item
-                    Your Choice: """)
-
-            if choice == "I":
-
-                Action.use_item(player)
-            elif choice == "B":
-                Action.block(player)
-            elif choice == "F":
-            #players turn
-
-                dmg_2_enm= max(0, player.attack- npc.defense)
-                npc.hp -= dmg_2_enm
-                print("You Attack....")
-                if dmg_2_enm>0:
-                    print(f"You attacked and dealt {dmg_2_enm} damage")
-                    print(f"Enemy's HP: {npc.hp}")
-                else:
-                    print("You missed!")
-
-                if npc.hp <= 0:
-                    print(f" {npc.name} is dead")
-                    return True
-
-            # enemy turn
-                dmg_2_play = max(0, npc.attack - player.defense)
-                player.hp -= dmg_2_play
-                print("Your Enemy Attack....")
-                if dmg_2_play > 0:
-                    print(f"Your enemy attacked and dealt {dmg_2_play} damage")
-                    print(f"Your HP: {player.hp}")
-                else:
-                    print("Your Enemy  missed!")
-
-                if player.hp <= 0:
-                    print(f" your dead")
-                    exit()
-                    return False
 
 
 
@@ -169,11 +109,14 @@ def main():
         print(f"{i}. {room.describe()}")
         if room.type == "enemy":
             npc = Npc("enemy")
-            Action.fight(player, npc)
+            action = Action("fight", None)
+            action.fight(player, npc)
+
 
         elif room.type == "boss":
             npc = Npc("boss")
-            Action.fight(player, npc)
+            action = Action("fight", None)
+            action.fight(player, npc)
 
         input("Press Enter to continue in the dungeon...")
 
